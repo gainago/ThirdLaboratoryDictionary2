@@ -1,5 +1,0 @@
-/home/goshagaina/MEPHILabsMyselfThirdSemester/ThirdLaboratoryDictionary/Qt/GUI_Cache/build/CMakeFiles/GUI_Cache.dir
-/home/goshagaina/MEPHILabsMyselfThirdSemester/ThirdLaboratoryDictionary/Qt/GUI_Cache/build/CMakeFiles/edit_cache.dir
-/home/goshagaina/MEPHILabsMyselfThirdSemester/ThirdLaboratoryDictionary/Qt/GUI_Cache/build/CMakeFiles/rebuild_cache.dir
-/home/goshagaina/MEPHILabsMyselfThirdSemester/ThirdLaboratoryDictionary/Qt/GUI_Cache/build/CMakeFiles/GUI_Cache_autogen_timestamp_deps.dir
-/home/goshagaina/MEPHILabsMyselfThirdSemester/ThirdLaboratoryDictionary/Qt/GUI_Cache/build/CMakeFiles/GUI_Cache_autogen.dir

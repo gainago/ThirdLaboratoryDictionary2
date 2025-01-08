@@ -33,9 +33,9 @@ int main(int argc, char** argv)
 
     TestLRUCache();
 
-    TestPersonNumberOfCallsConstructionFunctions();
+    //TestPersonNumberOfCallsConstructionFunctions();
 
-   //LoadTestsInt(argc, argv, 10000);
+   LoadTestsInt(argc, argv, 10000);
     
 
 }

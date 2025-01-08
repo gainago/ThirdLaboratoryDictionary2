@@ -20,6 +20,9 @@
         this->middleName = middleName;
         this->lastName = lastName;
         bornYear = bornYear;
+
+        numberOfCallsConstructionFunctions_++;
+        std:: cout << "called Constructor with Parametrs" << std::endl;
     }
 
     Person::Person(const Person &person)
@@ -29,6 +32,9 @@
         this->middleName = person.middleName;
         this->lastName = person.lastName;
         this->bornYear = person.bornYear;
+
+        numberOfCallsConstructionFunctions_++;
+        std:: cout << "called Copy constructor" << std::endl;
 
     }
 
