@@ -28,21 +28,16 @@ public:
     }
     MyNamespace::ReturnValue<Value> Get(Key const & key)
     {
-        if(dictionary_.Contains(key)){ //cache hit //вызыввет четыре копирования Value
-            MyNamespace::Pair<Value, typename LinkedList<Key>::Iterator>  cachedElement = dictionary_.Get(key);//вызов конструктора
+        if(dictionary_.Contains(key)){
+            MyNamespace::Pair<Value, typename LinkedList<Key>::Iterator>&  cachedElement = dictionary_.Get(key);
 
-            keysOfCachedElements_.Erase(cachedElement.GetSecond()); // reload record
+            keysOfCachedElements_.Erase(cachedElement.GetSecond()); 
             keysOfCachedElements_.Append(key);
-
-            dictionary_.Remove(key);
 
             typename LinkedList<Key>::Iterator newIt = keysOfCachedElements_.Back(); 
 
-            MyNamespace::Pair<Value, typename LinkedList<Key>::Iterator> newPair(cachedElement.GetFirst(), newIt);//вызов конструтора
-
-            dictionary_.Add(key, newPair);//два вызова конструктора
-
-            return MyNamespace::ReturnValue<Value>(1, cachedElement.GetFirst());//вызов конструктора
+            cachedElement.SetSecond(newIt);
+            return MyNamespace::ReturnValue<Value>(1, cachedElement.GetFirst());
         }
                         //cache miss //вызыввет пять копирования Value
         MyNamespace::ReturnValue<Value>  getNewValue = GetValue_(key);//один вызов конструктора
