@@ -5,6 +5,7 @@
 #include "Pair.h"
 #include "ReturnValue.h"
 #include "Dictionary.h"
+#include <iostream>
 
 class UIClass;
 
@@ -47,7 +48,8 @@ public:
             return MyNamespace::ReturnValue<Value>(1, cachedElement.GetFirst());
         }
                         //cache miss //вызыввет пять копирования Value
-        MyNamespace::ReturnValue<Value>  getNewValue = GetValue_(key);
+        MyNamespace::ReturnValue<Value> const &  getNewValue = GetValue_(key);
+        std::cout << "getNewValue\n";
 
         if(!getNewValue.IsCorrect()){ // can not get value with this key
             return getNewValue; //do not upgrade access history

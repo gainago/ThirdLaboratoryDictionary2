@@ -21,8 +21,8 @@ set(PROJECT_SOURCES
 )
 
 include_directories(
-"/home/goshagaina/Qwt/qwt-6.3.0/classincludes"
-"/home/goshagaina/Qwt/qwt-6.3.0/src"
+"${PROJECT_SOURCE_DIR}/../../../../Qwt/qwt-6.3.0/classincludes"
+"${PROJECT_SOURCE_DIR}/../../../../Qwt/qwt-6.3.0/src"
 "${LABA_PATH}/Declaration/Dictionary"
 "${LABA_PATH}/Declaration/Sequence"
 "${LABA_PATH}/Declaration/TypesOfData"
@@ -106,7 +106,7 @@ target_link_libraries(GUI_Third_LaboratoryExecutable PRIVATE
                     "${PROJECT_SOURCE_DIR}/${LABA_PATH}/Plot/build/libplot_lib.so")
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
-                                         "/home/goshagaina/Qwt/qwt-6.3.0/lib/libqwt.so.6.3.0")
+                                         "${PROJECT_SOURCE_DIR}/../../../../Qwt/qwt-6.3.0/lib/libqwt.so.6.3.0")
                                          
 target_link_libraries(GUI_Third_LaboratoryExecutable PRIVATE
-                                         "/home/goshagaina/Qwt/qwt-6.3.0/lib/libqwt.so.6.3.0")
+                                         "${PROJECT_SOURCE_DIR}/../../../../Qwt/qwt-6.3.0/lib/libqwt.so.6.3.0")

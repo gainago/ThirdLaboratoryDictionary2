@@ -18,8 +18,8 @@ include_directories(
 )
 
 include_directories(
-    "/home/goshagaina/Qwt/qwt-6.3.0/classincludes"
-    "/home/goshagaina/Qwt/qwt-6.3.0/src"
+    "${PROJECT_SOURCE_DIR}/../../../../Qwt/qwt-6.3.0/classincludes"
+    "${PROJECT_SOURCE_DIR}/../../../../Qwt/qwt-6.3.0/src"
 )
 
 #----------------------------------------Create Libraries
