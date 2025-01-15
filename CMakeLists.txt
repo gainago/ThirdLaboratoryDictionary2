@@ -4,10 +4,6 @@ project(Dictionary VERSION 1 LANGUAGES CXX)
 
 #--------------------------------- Set Flags
 
-#set(CMAKE_AUTOUIC ON)
-#set(CMAKE_AUTOMOC ON)
-#set(CMAKE_AUTORCC ON)
-
 set(CMAKE_CXX_STANDARD 20 )
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -18,15 +14,11 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -ggdb")
 
 #--------------------------------- Find Packages
 
-#find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-#find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+
 
 #--------------------------------- End Find Packages
 
 include_directories(
-
-#"/home/goshagaina/Qwt/qwt-6.3.0/classincludes" #Замените на свой путь!
-#"/home/goshagaina/Qwt/qwt-6.3.0/src"
 
 "${PROJECT_SOURCE_DIR}/Declaration/Sequence"
 "${PROJECT_SOURCE_DIR}/Declaration/Cache"
@@ -34,7 +26,6 @@ include_directories(
 "${PROJECT_SOURCE_DIR}/Declaration/GetHashCodes"
 "${PROJECT_SOURCE_DIR}/Tests"
 "${PROJECT_SOURCE_DIR}/Tests/LoadTests/Declaration"
-#"${PROJECT_SOURCE_DIR}/Qt/GUI_Dictionary"
 )
 #------------------------------------Create Libraries
 
@@ -98,12 +89,6 @@ target_link_libraries(${PROJECT_NAME}
 
 )  
 
-#target_link_libraries(${PROJECT_NAME} Qt${QT_VERSION_MAJOR}::Widgets)
-
-
-#target_link_libraries(${PROJECT_NAME}
-#                                        "/home/goshagaina/Qwt/qwt-6.3.0/lib/libqwt.so.6.3.0") #Замените на свой путь
-
                                          
 target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}_Functions_lib)
 
@@ -115,4 +100,3 @@ target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}_UnitTests_lib )
 
 target_link_libraries(${PROJECT_NAME} "${PROJECT_SOURCE_DIR}/Tests/LoadTests/build/libloadTests.so")
 
-#target_link_libraries(${PROJECT_NAME} "${PROJECT_SOURCE_DIR}/Qt/GUI_Dictionary/build/libGUI_Third_Laboratory.so")
