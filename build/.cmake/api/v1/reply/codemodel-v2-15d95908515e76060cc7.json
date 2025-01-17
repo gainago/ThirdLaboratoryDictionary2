@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Dictionary",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Dictionary::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Dictionary-Debug-558f1b8db46e6bc064b5.json",
+					"name" : "Dictionary",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Dictionary_Functions_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Dictionary_Functions_lib-Debug-4334dea42f486da0d900.json",
+					"name" : "Dictionary_Functions_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Dictionary_GetHashCodes_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Dictionary_GetHashCodes_lib-Debug-08218e996476ed963614.json",
+					"name" : "Dictionary_GetHashCodes_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Dictionary_TypesOfData_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Dictionary_TypesOfData_lib-Debug-5740c5fff5a02d3de2d7.json",
+					"name" : "Dictionary_TypesOfData_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Dictionary_UnitTests_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Dictionary_UnitTests_lib-Debug-b54e1de5d26596958bd7.json",
+					"name" : "Dictionary_UnitTests_lib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/goshagaina/MEPHILabsMyselfThirdSemester/ThirdLaboratoryDictionary2/build",
+		"source" : "/home/goshagaina/MEPHILabsMyselfThirdSemester/ThirdLaboratoryDictionary2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
