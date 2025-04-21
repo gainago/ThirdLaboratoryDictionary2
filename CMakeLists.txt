@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-
+#modified CMake
 project(Dictionary VERSION 1 LANGUAGES CXX)
 
 #--------------------------------- Set Flags
