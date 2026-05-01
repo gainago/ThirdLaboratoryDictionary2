@@ -294,7 +294,7 @@ void TestLRUCache()
 
 MyNamespace::ReturnValue<Person> GetPerson(int const & position)
 {
-    static Person array[2] = {{"First", "Ivan", "Ivanovich", "Ivanov", 2003}, {"Second", "Georgiy", "Evgenievich", "Gaina", 2005}};
+    static Person array[2] = {{"First", "Ivan", "Ivanovich", "Ivanov", 2003}, {"Second", "AAA", "BBB", "RRR", 2005}};
 
     if(position < 2){
         return MyNamespace::ReturnValue<Person>(1, array[position]);

@@ -263,7 +263,7 @@ public:
         return size_;
     }
 
-    int GetCapacity() const //функция не нужна, никакого смысла в ней нет
+    int GetCapacity() const 
     {
         return array_.GetCapacity();
     }
